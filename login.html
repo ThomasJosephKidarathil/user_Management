@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body style="background-color:aqua;">
+    <div class="container">
+        <!-- create display container to allocate display screen -->
+        <div class="row">
+            <!-- created row in output screen -->
+            <div class="col-md-4"></div>
+            <!-- create 3 div to customise output display ( above dive allotted the 1/3rd portion of the first row) -->
+            <div class="col-md-4">
+                <h2 class="text-primary text-center mt-5">Login</h2>
+                <!-- create forms to customize the output screen -->
+                <form class="mmt-5 border border-info border-2 mx-auto p-5 rounded"
+                style="background-color: white";>
+                    <div class="mb-3">
+                        <!-- this div provide input box to rad values -->
+                      <label for="exampleInputEmail1" class="form-label">Email ID</label>
+                      <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <!-- this div provide input box to rad values -->
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="userPassword">
+                    </div>
+                    <h6 class="mt-3 text-center">Not registred yet?<span class="ms-3"><a href="./registration.html">SignUp</a></span></h6>
+                    <div class="d-flex justify-content-evenly mt-3">
+                        <!-- provide buttons to perform the fucntions -->
+                    <button type="button" class="btn btn-primary" onclick="obj.login()">SignIn</button>
+                    <button type="button" class="btn btn-warning" onclick="clearscreen()">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./logic.js">
+// access java script file corresponding to the webpage to access the datas
+</script>
+<script>
+    function clearscreen()
+    {
+        userEmail.value=""
+        userPassword.value=""
+    }
+</script>
+</html>
